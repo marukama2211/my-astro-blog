@@ -6,7 +6,7 @@ import HeaderLink from './HeaderLink.astro';
 <header>
 	<nav>
 		<h2>
-			<HeaderLink href="/">{SITE_TITLE}</HeaderLink>
+			<a href={import.meta.env.BASE_URL}>{SITE_TITLE}</a>
 		</h2>
 		<div class="internal-links">
 			<HeaderLink href="/">Home</HeaderLink>
